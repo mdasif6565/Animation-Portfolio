@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+  <!-- header section -->
+  <!-- desktop header -->
+  <section class="hidden lg:block bg-secondary z-50 sticky top-0">
+    <div class="container">
+      <header class="flex items-center h-28">
+        <div class="h-full flex items-center">
+         <span class=" text-white text-4xl font-bold leading-loose font-sans;">Portfolio,</span>
+        </div>
+        <nav class="h-full flex-1 flex items-center justify-center ">
+          <ul class="flex items-center gap-x-10 h-full">
+            <li class="nav-list">
+              <a href="#home" class="active nav-link-desktop">Home</a>
+            </li>
+            <li class="nav-list">
+              <a href="#about" class="active nav-link-desktop">About</a>
+            </li>
+            <li class="nav-list">
+              <a href= "#skills" class="active nav-link-desktop">Skills</a>
+            </li>
+            <li class="nav-list">
+              <a href="#portfolio" class="active nav-link-desktop">Portfolio</a>
+            </li>
+            <li class="nav-list">
+              <a href="#experience" class="active nav-link-desktop">Experience</a>
+            </li>
+            <li class="nav-list">
+              <a  href="#testomonial" class="active nav-link-desktop">Testomonial</a>
+            </li>
+            <li class="nav-list">
+              <a href="#contact" class="active nav-link-desktop">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hidden h-full flex items-center bg-yellow-300">btn</div>
+      </header>
+    </div>
+  </section>
+  <!--./desktop header -->
+
+  <!-- mobile header -->
+  <section class="block lg:hidden  bg-secondary py-4 z-50 sticky top-0">
+    <div class="container">
+      <header class="static top-0">
+        <div class="flex items-center justify-center justify-between">
+          <div>
+            <span class=" text-white text-2xl font-bold leading-loose font-sans;">Portfolio,</span>
+          </div>
+          <div>
+           <button class="text-white lg:hidden" id="btn">
+              <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mobile-nav-icon">
+                <path name="menu-outline" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg class="mobile-nav-icon size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path name="close-outline" fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </button>
+          </div>
+        </div>
+        <nav id="menu" class="hidden">
+          <ul class="h-full">
+            <li class="nav-list">
+              <a href="#home" class="active nav-link-desktop">Home</a>
+            </li>
+            <li class="nav-list w-full">
+              <a href="#about" class="active nav-link-phone w-full">About</a>
+            </li>
+            <li class="nav-list">
+              <a href= "#skills" class="active nav-link-phone w-full">Skills</a>
+            </li>
+            <li class="nav-list">
+              <a href="#experience" class="active nav-link-phone w-full">Experience</a>
+            </li>
+            <li class="nav-list">
+              <a href="#portfolio" class="active nav-link-phone w-full">Portfolio</a>
+            </li>
+            <li class="nav-list">
+              <a  href="#testomonial" class="active nav-link-phone w-full">Testomonial</a>
+            </li>
+            <li class="nav-list">
+              <a href="#contact" class="active nav-link-phone w-full">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </section>
+  <!-- ./mobile header -->
+  <!-- ./header section -->
+  
+  <!-- home -->
+  <section class="bg-secondary" id="home">
+    <div class="container lg:grid grid-cols-2">
+      <div class="flex justify-center items-center section-gap-bottom">
+        <div class="home-title">
+          <div>
+            <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">Hello, It's Me</h3>
+            <h1 class="nickname text-white text-5xl font-bold xl:text-8xl">Md Asif</h1>
+            <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">And I'm a <span class="text text-primary font-semibold 2xl:font-bold text-3xl 2xl:text-4xl"></span></h3>
+            <p class="ss pt-8 lg:text-md lg:font-bold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere blanditiis ab libero, repudiandae, laudantium molestiae quod.</p>
+          </div>
+          <div class="flex items-center gap-x-4 pt-8">
+            
+            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/facebook-svgrepo-com (1).png" alt="Facebook logo"></a></div>
+            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/twitter-svgrepo-com.png" alt="twitter logo"></a></div>
+            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"> <a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/whatsapp-svgrepo-com.png" alt="Whatsapp logo"></a></div>
+            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/linkedin-svgrepo-com.png" alt="linkedin logo"></a></div>
+          </div>
+          <div class="pt-8">
+            <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Download CV</button>
+          </div>
+        </div>
+      </div>
+      <div class="img-title">
+       <img class="w-full" src="../assets/images/asif2-removebg-preview.png">
+      </div>
+    </div>
+  </section>
+  <!-- ./home -->
+ 
+  <!-- about -->
+  <section class="pb-10  bg-secondary-light" id="about">
+    <div class="container lg:grid grid-cols-2">
+      <div class="flex items-end justify-center order-2">
+        <div class="about-title pb-10">
+            <h1 class="text-5xl font-bold section-title">About <span class="text-primary">ME</span></h1>
+            <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">And I'm a <span class="text2 text-primary font-semibold 2xl:font-bold text-3xl 2xl:text-4xl"></span></h3>
+            <p class="pt-4 lg:text-md lg:font-bold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cum similique minima consequatur modi repellendus ad nostrum quis accusantium cumque, tempore reiciendis quae perferendis, corporis officia quibusdam. Iste, non, et laborum debitis itaque facilis dicta numquam a eum est quae quo vel atque repellendus ut quis omnis officiis quod similique.</p>
+            <div class="pt-8">
+              <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Read More</button>
+            </div>
+        </div>
+      </div>
+      <div class="order-1">
+        <div class="">
+          <div class="relative w-full h-full sm:h-[600px] flex items-center mb-6" id="1">
+            <div class="animate-pulse">
+              <div id="2" class=" absolute sm:bottom-0 sm:h-[500px] bottom-3  w-full h-[250px] md:h-[2px] bg-primary rounded-3xl"></div>
+            </div>
+              <img class="about-img-title z-30 w-full h-full object-contain pb-3 md:pb-1 lg:pt-24" src="../assets/images/asif.png" alt="">  
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- ./about -->
+  <!-- skills -->
+  <section class="bg-secondary section-gap" id="skills">
+    <div class="container">
+      <div class="flex justify-center items-end h-24 pb-6">
+        <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">Skills</span></h1>
+      </div>
+      <div class="skills-title space-y-6 lg:grid grid-cols-2 sm:space-x-4">
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">HTML</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 95%"></div>
+          </div>
+          <span class="ml-4 text-white">95%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Css</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 90%"></div>
+          </div>
+          <span class="ml-4 text-white">90%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Tailwind</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 90%"></div>
+          </div>
+          <span class="ml-4 text-white">90%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Bootstrap</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 80%"></div>
+          </div>
+          <span class="ml-4 text-white">80%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Git</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 85%"></div>
+          </div>
+          <span class="ml-4 text-white">85%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Github</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 90%"></div>
+          </div>
+          <span class="ml-4 text-white">90%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">JavaScript</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 70%"></div>
+          </div>
+          <span class="ml-4 text-white">70%</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-white text-lg font-semibold">Java</div>
+          <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
+            <div class="mitter bg-primary h-full" style="width: 60%"></div>
+          </div>
+          <span class="ml-4 text-white">60%</span>
+        </div>
+      </div>
+         
+    </div>
+  </section>
+  <!-- ./skills -->
+  
+  <!-- portfolio -->
+  <section class="bg-secondary section-gap" id="portfolio">
+    <div class="container">
+      <!-- portfolio heading -->
+      <div class="flex justify-center items-end h-24 mb-16">
+        <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">Portfolio</span></h1>
+      </div>
+      <!-- ./portfolio heading -->
+
+      <!-- portfolio card -->
+      <div class="portfolio-title grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3 ">
+        <!--portfolio card 1 -->
+        <div class="portfolio-size rounded-3xl">
+          <div class="relative group  mb-6 flex justify-center items-center z-10">
+            <img class="rounded-3xl"  src="..//assets/images/projet1.jpg">
+           <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65 invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+              <div class="portfolio-wrapper">
+                <h1 class="portfolio-heading">Amazon Scrapper</h1>
+                <div class="w-full">
+                  <p class="text-center text-white">A simple blog which user </p>
+                  <p class="text-center text-white">authentication such as Sign Up,</p>
+                  <p class="text-center text-white">Sign In......</p>
+                </div>
+                <div class="flex justify-center ">
+                  <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                    <button class=" flex full py-1 px-4 bg-white  text-black text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-bounce size-6 pl-2 pt-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--./portfolio card 1 -->
+
+        <!--portfolio card 2 -->
+        <div class="portfolio-size rounded-3xl">
+          <div class="relative group  mb-6 flex justify-center items-center z-10">
+            <img class="rounded-3xl"  src="..//assets/images/projet2.jpg">
+            <div class=" rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+              <div class="portfolio-wrapper">
+                <h1 class="portfolio-heading">Amazon Scrapper</h1>
+                <div class="w-full">
+                  <p class="text-center text-white">A simple blog which user </p>
+                  <p class="text-center text-white">authentication such as Sign Up,</p>
+                  <p class="text-center text-white">Sign In......</p>
+                </div>
+                <div class="flex justify-center ">
+                  <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                    <button class=" flex full py-1 px-4 bg-white  text-black text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2 pt-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--./portfolio card 2 -->
+
+        <!--portfolio card 3 -->
+        <div class="rounded-3xl">
+          <div class="relative group  mb-6 flex justify-center items-center z-10">
+            <img class=" rounded-3xl"  src="..//assets/images/projet3.jpg">
+            <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+              <div class="portfolio-wrapper">
+                <h1 class="portfolio-heading">Amazon Scrapper</h1>
+                <div class="w-full">
+                  <p class="text-center text-white">A simple blog which user </p>
+                  <p class="text-center text-white">authentication such as Sign Up,</p>
+                  <p class="text-center text-white">Sign In......</p>
+                </div>
+                <div class="flex justify-center ">
+                  <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                    <button class=" flex full py-1 px-4 bg-white  text-black text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2 pt-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--./portfolio card 3 -->
+
+        <!--portfolio card 4 -->
+        <div class="rounded-3xl">
+          <div class="relative group  mb-6 flex justify-center items-center z-10">
+            <img class="rounded-3xl"  src="..//assets/images/projet4.jpg">
+            <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+              <div class="portfolio-wrapper">
+                <h1 class="portfolio-heading">Amazon Scrapper</h1>
+                <div class="w-full">
+                  <p class="text-center text-white">A simple blog which user </p>
+                  <p class="text-center text-white">authentication such as Sign Up,</p>
+                  <p class="text-center text-white">Sign In......</p>
+                </div>
+                <div class="flex justify-center ">
+                  <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                    <button class=" flex full py-1 px-4 bg-white  text-black text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2 pt-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--./portfolio card 4 -->
+
+        <!--portfolio card 5 -->
+        <div class="rounded-3xl">
+          <div class="relative group mb-6 flex justify-center items-center z-10">
+            <img class="rounded-3xl"  src="..//assets/images/projet5.jpg">
+            <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+              <div class="portfolio-wrapper">
+                <h1 class="portfolio-heading">Amazon Scrapper</h1>
+                <div class="w-full">
+                  <p class="text-center text-white">A simple blog which user </p>
+                  <p class="text-center text-white">authentication such as Sign Up,</p>
+                  <p class="text-center text-white">Sign In......</p>
+                </div>
+                <div class="flex justify-center ">
+                  <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                    <button class=" flex full py-1 px-4 bg-white  text-black text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2 pt-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--./portfolio card 5 -->
+
+        <!--portfolio card 6-->
+        <div class="rounded-3xl">
+          <div class="relative group mb-6 flex justify-center items-center z-10">
+            <img class="rounded-3xl"  src="..//assets/images/projet6.jpg">
+          <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
+            <div class="portfolio-wrapper">
+              <h1 class="portfolio-heading">Amazon Scrapper</h1>
+              <div class="w-full">
+                <p class="text-center text-white">A simple blog which user </p>
+                <p class="text-center text-white">authentication such as Sign Up,</p>
+                <p class="text-center text-white">Sign In......</p>
+              </div>
+              <div class="flex justify-center ">
+                <div class="h-2 mt-4 xl:pt-8 sm:pt-8">
+                  <button class=" bg-white  text-black flex full py-1 px-4  text-lg rounded-2xl hover:bg-primary hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact Me
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2 pt-1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </button>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--./portfolio card 6-->
+
+       <!-- ./portfolio card -->
+
+       <!-- portfolio button -->
+      <div class="flex justify-center">
+        <div class="pt-8">
+          <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">View More</button>
+        </div>
+      </div>
+      <!-- ./portfolio button -->
+      
+    </div>
+  </section>
+  <!-- ./portfolio -->
+
+  <!-- Experience -->
+  <section class="bg-secondary" id="experience">
+      <div class="container section-gap-bottom">
+        <!-- title -->
+        <div class="flex justify-center 2xl:flex 2xl:justify-start w-full mb-4 2xl:h-[100px]">
+        <h1 class="section-title -mt-9">My <span class="text-primary text-4xl sm:text-5xl 2xl:text-6xl font-bold leading-loose font-serif; -mt-8">Experience</span></h1>
+        </div>
+        <!--./title -->
+        <div class="experience-title flex flex-col md:flex-row gap-2  md:gap-8 pb-4">
+          <!-- Year -->
+          <div class=" flex">
+            <div>
+              <div class="flex items-center">
+                <div class="relative w-16 h-8 bg-gray-500 flex items-center justify-center mb-1">
+                  <h1 class="text-sm text-white ">2024 </h1>    
+                </div>
+                <div class="absolute ml-[50px] w-[25px] h-[25px] bg-gray-500 rotate-45 mb-[3px]"></div>
+            </div>
+            </div>
+          </div>
+          <!-- ./year -->
+          <!-- content -->
+          <div class="flex gap-2 md:gap-8">
+              <div class=" flex flex-col sm: items-center pt-2 sm:pt-0">
+                    <!-- circle -->
+                    <div class="sm:mb-2">
+                        <div class="bg-primary box-shadow-custom   h-4 w-4 sm:h-8 sm:w-8 rounded-full"></div>
+                    </div>
+                    <!--./circle -->
+                    <div class="h-full w-[2px] bg-white">
+                    </div>
+              </div>
+              <div class="">
+                    <h1 class="text-lg sm:text-xl 2xl:text-4xl text-white font-medium leading-1 pb-2">Front End Developer</h1>
+                    <h3 class="text-md xl:text-2xl text-white leading-1 pb-2">Pulse Tech Ltd, Dhaka, Bangladesh</h3>
+                    <p class="text-md 2xl:text-xl text-neutral-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui nostrum soluta architecto, eveniet doloremque dolor autem omnis a magni quia, eaque commodi. Repellat beatae blanditiis obcaecati doloremque animi alias.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi beatae eligendi impedit doloremque? Asperiores suscipit ipsam atque corrupti. Quia quidem ullam iusto rerum dolorem explicabo. Temporibus velit aliquam esse!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam rem eveniet ab molestiae autem culpa mollitia alias, officiis repudiandae consectetur hic animi nemo! Explicabo quae nostrum aperiam excepturi vel.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eos eius, nemo, expedita fuga perspiciatis minus, dolore nulla at maiores nam non quo iusto! Veniam labore numquam adipisci blanditiis maxime?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolores repellendus doloribus quis consectetur fugiat error quo laudantium commodi minus! Quaerat iste quasi quae. Nemo eius id esse accusamus repellat. Aspernatur, debitis reprehenderit nobis ea dolorem omnis unde voluptatibus, sunt optio, aperiam illum quibusdam. Fugit incidunt, perferendis dolorem voluptas similique maiores omnis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi impedit mollitia minima temporibus neque totam nihil officiis aut corrupti, illum, repudiandae fuga vero, consequuntur quasi et! Delectus excepturi doloribus dolorem.
+                    </p>
+              </div>
+          </div>
+          <!--./ content -->
+        </div>
+  
+        <div class="flex flex-col md:flex-row gap-2  md:gap-8 pb-4">
+          <!-- Year -->
+          <div class=" flex">
+            <div>
+              <div class="flex items-center">
+                <div class="relative w-16 h-8 bg-gray-500 flex items-center justify-center mb-1">
+                  <h1 class="text-sm text-white ">2024 </h1>    
+                </div>
+                <div class="absolute ml-[50px] w-[25px] h-[25px] bg-gray-500 rotate-45 mb-[3px]"></div>
+            </div>
+            </div>
+          </div>
+          <!-- ./year -->
+          <!-- content -->
+          <div class="flex gap-2 md:gap-8">
+              <div class=" flex flex-col sm: items-center pt-2 sm:pt-0">
+                    <!-- circle -->
+                    <div class="sm:mb-2">
+                        <div class="bg-primary box-shadow-custom   h-4 w-4 sm:h-8 sm:w-8 rounded-full"></div>
+                    </div>
+                    <!--./circle -->
+                    <div class="h-full w-[2px] bg-white">
+                    </div>
+              </div>
+              <div class="">
+                    <h1 class="text-lg sm:text-xl 2xl:text-4xl text-white font-medium leading-1 pb-2">Front End Developer</h1>
+                    <h3 class="text-md xl:text-2xl text-white leading-1 pb-2">Pulse Tech Ltd, Dhaka, Bangladesh</h3>
+                    <p class="text-md 2xl:text-xl text-neutral-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui nostrum soluta architecto, eveniet doloremque dolor autem omnis a magni quia, eaque commodi. Repellat beatae blanditiis obcaecati doloremque animi alias.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi beatae eligendi impedit doloremque? Asperiores suscipit ipsam atque corrupti. Quia quidem ullam iusto rerum dolorem explicabo. Temporibus velit aliquam esse!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam rem eveniet ab molestiae autem culpa mollitia alias, officiis repudiandae consectetur hic animi nemo! Explicabo quae nostrum aperiam excepturi vel.
+                    </p>
+              </div>
+          </div>
+          <!--./ content -->
+        </div>
+      </div>
+  </section>
+  <!--./ Experience -->
+
+  <!-- testomolial -->
+  <!-- testimonial -->
+  <section class="bg-secondary-light" id="testomonial">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 section-gap lg:space-x-4">
+      <div class="testomonial-title w-full h-full">
+        <div class="h-full flex items-center">
+            <div class="">
+                <div class="sm:pb-2 text-center sm:text-start">
+                    <h1 class="section-title">Testomonial</h1>
+                </div>
+                <div class="flex">
+                    <div class="w-32 mt-3 mr-4">
+                    <hr class="border-2 rounded border-primary w-full">
+                    </div> 
+                    <div>
+                    <h1 class="text-white text-1xl font-normal leading-normal"><span class="text-primary">The design quality,</span> flexibility, documentation and support are absolutely <span class="text-primary"> excellent.</span> I buy the Avada theme for all my clients , knowing that whatever they require, Avada will be able to deliver.</h1>
+                    <div class="mt-4">
+                        <h1 class="text-white text-2xl font-semibold leading-loose font-serif lg:lg:text-4xl lg:pt-4" >Asik</h1>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 mt-3 mr-4">
+                        <hr class="border-2 rounded border-primary w-full">
+                        </div> 
+                        <div>
+                        <h1 class="text-white">CEO, ptl</h1>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="relative w-full h-full sm:h-[600px] flex items-center mb-6" id="1">
+        <div class="animate-pulse">
+          <div id="2" class=" absolute sm:bottom-0 sm:h-[500px] bottom-3  w-full h-[250px] lg:h-[400px] bg-primary rounded-3xl"></div>
+        </div>
+          <img class=" z-30 w-full h-full object-contain lg:pt-24" src="../assets/images/asif.png" alt="">  
+      </div>
+    </div>
+  </section>
+  <!--./ testimonial -->
+  <!-- ./testomonial -->
+  <!-- contact -->
+  <footer class="bg-secondary section-gap" id="contact">
+  <div class="container">
+    <div class="flex justify-center items-end h-24 mb-16">
+      <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">contact</span></h1>
+    </div>
+    <div class="flex justify-center">
+      <!-- Contact Form -->
+      <div class="contact-form w-full lg:w-1/2 p-2 lg:p-8 border border-primary rounded-lg shadow-lg">
+          <form action="#" method="POST">
+              <div class="mb-4">
+                  <label for="name" class="block text-sm font-bold mb-2 text-white">Name</label>
+                  <input type="text" id="name" name="name" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="block text-sm font-bold mb-2 text-white">Email</label>
+                  <input type="email" id="email" name="email" class="w-full p-3 border bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="block text-sm font-bold mb-2 text-white">Message</label>
+                  <textarea id="message" name="message" rows="6" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+              </div>
+              <div class="pt-8 flex justify-center">
+                <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Send Message</button>
+              </div>
+          </form>
+      </div>
+  </div>        
+  </div>
+  </footer>
+  <!-- ./contact -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../src/index.js"></script>
+</body>
+</html>

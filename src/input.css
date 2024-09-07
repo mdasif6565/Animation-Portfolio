@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ul li a.active{
+    color: #01ECFF;
+    
+}
+.img-title{
+    animation:floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    @apply text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-loose font-serif;
+}
+.section-gap-bottom{
+    @apply pb-10;
+}
+.section-gap{
+    @apply pt-16 pb-16;
+}
+/*====== header==== */
+.nav-list {
+    @apply h-full flex items-center;
+}
+.nav-link-desktop{
+    @apply h-full flex items-center text-xl xl:text-2xl font-medium text-white hover:text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 font-dosis;
+}
+.nav-link-phone{
+    @apply h-full flex items-center text-xl xl:text-2xl font-medium text-white hover:text-primary transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-100 font-dosis;
+}
+/*======./ header==== */
+
+
+.box-shadow-custom {
+    box-shadow: #01ECFF 0px 0px 20px;
+}
+
+
+.section-title {
+    @apply text-white text-4xl sm:text-5xl 2xl:text-6xl font-bold leading-loose font-sans;
+}
+
+
+
+/*=========Skill-card-section=======*/
+.card-wrapper {
+    @apply flex flex-col gap-10 items-center justify-center p-4 w-full h-full bg-secondary rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 duration-300 hover:bg-primary;
+}
+
+.img-wrapper{
+    @apply w-10 h-10 lg:w-24 lg:h-44;
+}
+.skills-card-heading{
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold text-white text-wrap line-clamp-2;
+    
+}
+/*=========./Skill card-section=======*/
+
+
+
+/* =========portfolio-section========= */
+
+
+.portfolio-heading{
+    @apply text-center text-4xl text-white;
+}
+.portfolio-wrapper{
+    @apply flex flex-col h-full items-center justify-center;
+}
+/* =========./portfolio-section======= */
