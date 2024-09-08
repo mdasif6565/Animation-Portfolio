@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 ul li a.active{
     color: #01ECFF;
     
@@ -43,7 +45,7 @@ ul li a.active{
 
 
 .box-shadow-custom {
-    box-shadow: #01ECFF 0px 0px 20px;
+    box-shadow: #01ECFF 0px 0px 12px;
 }
 
 

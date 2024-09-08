@@ -9,7 +9,7 @@
 <body>
   <!-- header section -->
   <!-- desktop header -->
-  <section class="hidden lg:block bg-secondary z-50 sticky top-0">
+  <div class="hidden lg:block bg-secondary z-50 sticky top-0">
     <div class="container">
       <header class="flex items-center h-28">
         <div class="h-full flex items-center">
@@ -43,52 +43,56 @@
         <div class="hidden h-full flex items-center bg-yellow-300">btn</div>
       </header>
     </div>
-  </section>
+  </div>
   <!--./desktop header -->
 
   <!-- mobile header -->
-  <section class="block lg:hidden  bg-secondary py-4 z-50 sticky top-0">
+  <section class="block lg:hidden bg-secondary py-4 z-50 sticky top-0">
     <div class="container">
-      <header class="static top-0">
-        <div class="flex items-center justify-center justify-between">
-          <div>
-            <span class=" text-white text-2xl font-bold leading-loose font-sans;">Portfolio,</span>
-          </div>
-          <div>
-           <button class="text-white lg:hidden" id="btn">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                <path  stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-            </button>
-          </div>
-        </div>
-        <nav id="menu" class="hidden">
-          <ul class="h-full">
-            <li class="nav-list">
-              <a href="#home" class="active nav-link-desktop">Home</a>
-            </li>
-            <li class="nav-list w-full">
-              <a href="#about" class="active nav-link-phone w-full">About</a>
-            </li>
-            <li class="nav-list">
-              <a href= "#skills" class="active nav-link-phone w-full">Skills</a>
-            </li>
-            <li class="nav-list">
-              <a href="#experience" class="active nav-link-phone w-full">Experience</a>
-            </li>
-            <li class="nav-list">
-              <a href="#portfolio" class="active nav-link-phone w-full">Portfolio</a>
-            </li>
-            <li class="nav-list">
-              <a  href="#testomonial" class="active nav-link-phone w-full">Testomonial</a>
-            </li>
-            <li class="nav-list">
-              <a href="#contact" class="active nav-link-phone w-full">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <header class="static top-0">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="text-white text-2xl font-bold leading-loose font-sans;">Portfolio,</span>
+                </div>
+                <div>
+                    <button class="text-white lg:hidden" id="btn">
+                        <!-- Hamburger Icon -->
+                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Close Icon (Hidden by default) -->
+                        <svg id="close-icon" class="size-8 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav id="menu" class="hidden">
+                <ul class="h-full">
+                    <li class="nav-list">
+                        <a href="#home" class="nav-link-desktop">Home</a>
+                    </li>
+                    <li class="nav-list w-full">
+                        <a href="#about" class="nav-link-phone w-full">About</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#skills" class="nav-link-phone w-full">Skills</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#experience" class="nav-link-phone w-full">Experience</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#portfolio" class="nav-link-phone w-full">Portfolio</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#testomonial" class="nav-link-phone w-full">Testomonial</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact" class="nav-link-phone w-full">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
   </section>
   <!-- ./mobile header -->
@@ -96,29 +100,31 @@
   
   <!-- home -->
   <section class="bg-secondary" id="home">
-    <div class="container lg:grid grid-cols-2">
-      <div class="flex justify-center items-center section-gap-bottom">
-        <div class="home-title">
-          <div>
-            <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">Hello, It's Me</h3>
-            <h1 class="nickname text-white text-5xl font-bold xl:text-8xl">Md Asif</h1>
-            <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">And I'm a <span class="text text-primary font-semibold 2xl:font-bold text-3xl 2xl:text-4xl"></span></h3>
-            <p class="ss pt-8 lg:text-md lg:font-bold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere blanditiis ab libero, repudiandae, laudantium molestiae quod.</p>
-          </div>
-          <div class="flex items-center gap-x-4 pt-8">
-            
-            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/facebook-svgrepo-com (1).png" alt="Facebook logo"></a></div>
-            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/twitter-svgrepo-com.png" alt="twitter logo"></a></div>
-            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"> <a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/whatsapp-svgrepo-com.png" alt="Whatsapp logo"></a></div>
-            <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a class="w-6 h-6 rounded-full box-shadow-custom"><img class="w-full" src="..//assets/images/linkedin-svgrepo-com.png" alt="linkedin logo"></a></div>
-          </div>
-          <div class="pt-8">
-            <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Download CV</button>
+    <div class="container">
+      <div class="lg:grid grid-cols-2">
+        <div class="flex justify-center items-center section-gap-bottom">
+          <div class="home-title">
+            <div>
+              <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">Hello, It's Me</h3>
+              <h1 class="nickname text-white text-5xl font-bold xl:text-8xl">Md Asif</h1>
+              <h3 class="text-gray-100 font-bold  text-2xl lg:text-3xl">And I'm a <span class="text text-primary font-semibold 2xl:font-bold text-3xl 2xl:text-4xl"></span></h3>
+              <p class="ss pt-8 lg:text-md lg:font-bold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere blanditiis ab libero, repudiandae, laudantium molestiae quod.</p>
+            </div>
+            <div class="flex items-center gap-x-4 pt-8">
+              
+              <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a href="#" class="w-6 h-6 rounded-full box-shadow-custom hover:shadow-none duration-300"><img class="w-full" src="..//assets/images/facebook-svgrepo-com (1).png" alt="Facebook logo"></a></div>
+              <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a href="#" class="w-6 h-6 rounded-full box-shadow-custom hover:shadow-none duration-300"><img class="w-full" src="..//assets/images/twitter-svgrepo-com.png" alt="twitter logo"></a></div>
+              <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a href="#" class="w-6 h-6 rounded-full box-shadow-custom hover:shadow-none duration-300"><img class="w-full" src="..//assets/images/whatsapp-svgrepo-com.png" alt="Whatsapp logo"></a></div>
+              <div class="w-10 h-10 bg-secondary flex justify-center items-center rounded-full"><a href="#" class="w-6 h-6 rounded-full box-shadow-custom hover:shadow-none duration-300"><img class="w-full" src="..//assets/images/linkedin-svgrepo-com.png" alt="linkedin logo"></a></div>
+            </div>
+            <div class="pt-8">
+              <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Download CV</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="img-title">
-       <img class="w-full" src="../assets/images/asif2-removebg-preview.png">
+        <div class="img-title">
+         <img class="w-full" src="..//assets/images/Artboard 2@3x.png">
+        </div>
       </div>
     </div>
   </section>
@@ -126,7 +132,7 @@
  
   <!-- about -->
   <section class="pb-10  bg-secondary-light" id="about">
-    <div class="container lg:grid grid-cols-2">
+    <div class="container lg:grid grid-cols-2 gap-x-4">
       <div class="flex items-end justify-center order-2">
         <div class="about-title pb-10">
             <h1 class="text-5xl font-bold section-title">About <span class="text-primary">ME</span></h1>
@@ -151,13 +157,14 @@
     
   </section>
   <!-- ./about -->
+
   <!-- skills -->
   <section class="bg-secondary section-gap" id="skills">
     <div class="container">
       <div class="flex justify-center items-end h-24 pb-6">
         <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">Skills</span></h1>
       </div>
-      <div class="skills-title space-y-6 lg:grid grid-cols-2 sm:space-x-4">
+      <div class="lg:grid grid-cols-2 space-x-8">
         <div class="flex items-center justify-between">
           <div class="text-white text-lg font-semibold">HTML</div>
           <div class="w-full ml-4 bg-secondary-light rounded-full h-3 overflow-hidden">
@@ -214,8 +221,7 @@
           </div>
           <span class="ml-4 text-white">60%</span>
         </div>
-      </div>
-         
+      </div> 
     </div>
   </section>
   <!-- ./skills -->
@@ -230,10 +236,10 @@
       <!-- ./portfolio heading -->
 
       <!-- portfolio card -->
-      <div class="portfolio-title grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3 ">
+      <div class="portfolio-title grid grid-cols-1 md:grid-cols-2 gap-6 space-y-0 2xl:grid-cols-3 ">
         <!--portfolio card 1 -->
         <div class="portfolio-size rounded-3xl">
-          <div class="relative group  mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class="rounded-3xl"  src="..//assets/images/projet1.jpg">
            <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65 invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
               <div class="portfolio-wrapper">
@@ -260,7 +266,7 @@
 
         <!--portfolio card 2 -->
         <div class="portfolio-size rounded-3xl">
-          <div class="relative group  mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class="rounded-3xl"  src="..//assets/images/projet2.jpg">
             <div class=" rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
               <div class="portfolio-wrapper">
@@ -287,7 +293,7 @@
 
         <!--portfolio card 3 -->
         <div class="rounded-3xl">
-          <div class="relative group  mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class=" rounded-3xl"  src="..//assets/images/projet3.jpg">
             <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
               <div class="portfolio-wrapper">
@@ -314,7 +320,7 @@
 
         <!--portfolio card 4 -->
         <div class="rounded-3xl">
-          <div class="relative group  mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class="rounded-3xl"  src="..//assets/images/projet4.jpg">
             <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
               <div class="portfolio-wrapper">
@@ -341,7 +347,7 @@
 
         <!--portfolio card 5 -->
         <div class="rounded-3xl">
-          <div class="relative group mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class="rounded-3xl"  src="..//assets/images/projet5.jpg">
             <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
               <div class="portfolio-wrapper">
@@ -368,7 +374,7 @@
 
         <!--portfolio card 6-->
         <div class="rounded-3xl">
-          <div class="relative group mb-6 flex justify-center items-center z-10">
+          <div class="relative group flex justify-center items-center z-10">
             <img class="rounded-3xl"  src="..//assets/images/projet6.jpg">
           <div class="rounded-3xl absolute z-50 h-full w-full group-hover:bg-black/65  invisible group-hover:visible transparent transition ease-in-out delay-180 hover:-translate-y-1 duration-500">
             <div class="portfolio-wrapper">
@@ -409,7 +415,7 @@
   <!-- ./portfolio -->
 
   <!-- Experience -->
-  <section class="bg-secondary" id="experience">
+  <section class="bg-secondary section-gap" id="experience">
       <div class="container section-gap-bottom">
         <!-- title -->
         <div class="flex justify-center 2xl:flex 2xl:justify-start w-full mb-4 2xl:h-[100px]">
@@ -537,37 +543,201 @@
   </section>
   <!--./ testimonial -->
   <!-- ./testomonial -->
+
   <!-- contact -->
-  <footer class="bg-secondary section-gap" id="contact">
-  <div class="container">
-    <div class="flex justify-center items-end h-24 mb-16">
+  <section class="bg-secondary section-gap" id="contact">
+    <div class="container">
+      <div class="flex justify-center items-end h-24 mb-16">
       <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">contact</span></h1>
     </div>
     <div class="flex justify-center">
       <!-- Contact Form -->
       <div class="contact-form w-full lg:w-1/2 p-2 lg:p-8 border border-primary rounded-lg shadow-lg">
-          <form action="#" method="POST">
-              <div class="mb-4">
-                  <label for="name" class="block text-sm font-bold mb-2 text-white">Name</label>
-                  <input type="text" id="name" name="name" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-              </div>
-              <div class="mb-4">
-                  <label for="email" class="block text-sm font-bold mb-2 text-white">Email</label>
-                  <input type="email" id="email" name="email" class="w-full p-3 border bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-              </div>
-              <div class="mb-4">
-                  <label for="message" class="block text-sm font-bold mb-2 text-white">Message</label>
-                  <textarea id="message" name="message" rows="6" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
-              </div>
-              <div class="pt-8 flex justify-center">
-                <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Send Message</button>
-              </div>
-          </form>
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-bold mb-2 text-white">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-bold mb-2 text-white">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-bold mb-2 text-white">Message</label>
+            <textarea id="message" name="message" rows="6" class="w-full p-3 bg-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+          </div>
+          <div class="pt-8 flex justify-center">
+            <button class="bg-primary text-md font-bold px-10 py-3 rounded-2xl box-shadow-custom hover:shadow-none duration-300">Send Message</button>
+          </div>
+        </form>
       </div>
-  </div>        
+  </div>   
+    </div>
+  </section>
+  <!-- ./contact -->
+
+  <!-- foooter --> 
+  <footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- About Section -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">About Me</h2>
+        <p class="text-gray-400">
+          I am a professional Frontend developer with over 4 years of experience in building scalable web applications and dynamic websites. Skilled in both front-end. I am passionate about delivering high-quality solutions.
+        </p>
+      </div>
+      
+      <!-- Services Section -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Services</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="#web-development" class="hover:text-gray-100">Web Development</a>
+          </li>
+          <li>
+            <a href="#ui-ux-design" class="hover:text-gray-100">UI/UX Design</a>
+          </li>
+          <li>
+            <a href="#project-management" class="hover:text-gray-100">Project Management</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Contact Info</h2>
+        <ul class="space-y-2">
+          <li>Email: <a href="mailto:contact@portfolio.com" class="hover:text-gray-100">mdasifdev123@gmail.com</a></li>
+          <li>Phone: <a href="tel:01684135879" class="hover:text-gray-100">01684135879</a></li>
+          <li>Location: Bangladesh, Comilla</li>
+        </ul>
+        
+        <!-- Social Icons -->
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="hover:text-gray-100">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <!-- LinkedIn Icon -->
+              <path d="M20.45 2H3.55C2.7 2 2 2.7 2 3.55v16.9C2 21.3 2.7 22 3.55 22h16.9c.85 0 1.55-.7 1.55-1.55V3.55C22 2.7 21.3 2 20.45 2zM8.48 18.4H5.56V9.97h2.92V18.4zm-1.46-9.71c-.94 0-1.7-.76-1.7-1.7 0-.94.76-1.7 1.7-1.7.94 0 1.7.76 1.7 1.7 0 .94-.76 1.7-1.7 1.7zm11.17 9.71h-2.92v-4.3c0-1.03-.02-2.36-1.44-2.36-1.44 0-1.66 1.13-1.66 2.29v4.37H9.98V9.97h2.8v1.15h.04c.39-.73 1.35-1.5 2.78-1.5 2.97 0 3.52 1.95 3.52 4.48v4.3h-.02z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-100">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <!-- GitHub Icon -->
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.86 8.13 6.84 9.45.5.09.68-.22.68-.48v-1.7c-2.77.6-3.36-1.35-3.36-1.35-.45-1.13-1.1-1.43-1.1-1.43-.9-.61.07-.6.07-.6 1.02.07 1.56 1.04 1.56 1.04.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.21-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.26.1-2.62 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0112 6.84c.85.01 1.7.12 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.36.2 2.37.1 2.62.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.69-4.57 4.93.36.31.68.91.68 1.84v2.73c0 .27.18.58.69.48A9.996 9.996 0 0022 12c0-5.52-4.48-10-10-10z"/>
+            </svg>
+          </a>
+          <!-- Add other social icons as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+      <p>&copy; 2024 Md.Asif. All Rights Reserved. | <a href="/privacy-policy" class="hover:text-gray-100">Privacy Policy</a></p>
+    </div>
   </div>
   </footer>
-  <!-- ./contact -->
+  <!-- ./footer -->
+
+
+
+  <section id="skills" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-semibold text-gray-800">Skills & Expertise</h2>
+      <p class="text-gray-500 mt-2">A summary of my technical skills and areas of expertise</p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Front-End Development</h3>
+        <p class="text-gray-500 mb-4">Experienced in building responsive and interactive user interfaces using modern frameworks and libraries.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            HTML, CSS, JavaScript
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            React, Vue.js, Tailwind CSS
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            Responsive & Cross-Browser Design
+          </li>
+        </ul>
+      </div>
+
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Back-End Development</h3>
+        <p class="text-gray-500 mb-4">Proficient in building scalable and robust server-side applications with modern technologies.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            Node.js, Express
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            Python, Django
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            REST APIs, Microservices
+          </li>
+        </ul>
+      </div>
+
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Database Management</h3>
+        <p class="text-gray-500 mb-4">Extensive experience in designing and managing databases for scalable applications.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            MySQL, PostgreSQL
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            MongoDB, Firebase
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
+            </svg>
+            Database Design & Optimization
+          </li>
+        </ul>
+      </div>
+
+      <!-- Additional Skill Items -->
+      <!-- You can add more skills sections as necessary -->
+
+    </div>
+  </div>
+</section>
+
+  
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="../src/index.js"></script>
 </body>

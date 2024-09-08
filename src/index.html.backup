@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+  <div class="page">
+    <!-- Desktop Header -->
+    <header class="page-header bg-blue-500">
+      <section class="page-section">
+        <div class="container-full">
+          <div class="container">
+            <div class="hidden lg:block bg-secondary z-50 sticky top-0">
+                <div class="flex items-center h-28">
+                  <div class="h-full flex items-center">
+                  <span class=" text-white text-4xl font-bold leading-loose font-sans;">Portfolio,</span>
+                  </div>
+                  <nav class="h-full flex-1 flex items-center justify-center ">
+                    <ul class="flex items-center gap-x-10 h-full">
+                      <li class="nav-list">
+                        <a href="#home" class="active nav-link-desktop">Home</a>
+                      </li>
+                      <li class="nav-list">
+                        <a href="#about" class="active nav-link-desktop">About</a>
+                      </li>
+                      <li class="nav-list">
+                        <a href= "#skills" class="active nav-link-desktop">Skills</a>
+                      </li>
+                      <li class="nav-list">
+                        <a href="#portfolio" class="active nav-link-desktop">Portfolio</a>
+                      </li>
+                      <li class="nav-list">
+                        <a href="#experience" class="active nav-link-desktop">Experience</a>
+                      </li>
+                      <li class="nav-list">
+                        <a  href="#testomonial" class="active nav-link-desktop">Testomonial</a>
+                      </li>
+                      <li class="nav-list">
+                        <a href="#contact" class="active nav-link-desktop">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="hidden h-full flex items-center bg-yellow-300">btn</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Mobile Header -->
+    <!-- <header class="page-header bg-blue-500">
+    </header> -->
+
+    <main class="page-content">
+
+      <section class="page-section hero-section bg-red-200">
+        <div class="container-full">
+          <div class="container">
+            <div class="content-wraper bg-white">Hero</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section hero-section bg-red-200">
+        <div class="container-full">
+          <div class="container">
+            <div class="content-wraper bg-white">Hero</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      Main footer
+    </footer>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../src/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page {
+    @apply relative w-full;
+}
+.page > .page-header {
+    @apply absolute w-full top-0 left-0 right-0 h-20;
+}
+.page > .page-header > .page-section {
+    @apply h-full;
+}
+.page > .page-header > .page-section > .container-full {
+    @apply h-full;
+}
+.page > .page-header > .page-section > .container-full > .container {
+    @apply flex flex-row h-full;
+}
+.page > .page-header > .page-section > .container-full > .container > .logo-wraper {}
+.page > .page-header > .page-section > .container-full > .container > .main-nav {}
+.page > .page-header > .page-section > .container-full > .container > .main-nav > ul {
+    @apply flex flex-row space-x-4 items-center h-full;
+}
+.page > .page-header > .page-section > .container-full > .container > .main-nav > ul > li {}
+.page > .page-header > .page-section > .container-full > .container > .main-nav > ul > li > a {}
+.page > .page-content > .page-section {
+    @apply h-screen w-full;
+}
+.page > .page-content > .page-section > .container-full {
+    @apply h-full w-full;
+}
+.page > .page-content > .page-section > .container-full > .container {
+    @apply h-full w-full flex items-center justify-center;
+}
+.page > .page-content > .page-section > .container-full > .container > .content-wraper {}
+.page > .page-footer {}

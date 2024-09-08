@@ -1,26 +1,17 @@
-let mobile_icon= document.getElementById("btn");
-let mobile_menu= document.getElementById("menu");
+const btn = document.getElementById('btn');
+const menu = document.getElementById('menu');
+const menuIcon = document.getElementById('menu-icon');
+const closeIcon = document.getElementById('close-icon');
 
+btn.addEventListener('click', () => {
+  // Toggle the menu visibility
+  menu.classList.toggle('hidden');
 
-mobile_icon.addEventListener("click",function(){
-    mobile_menu.classList.toggle("hidden");
+  // Toggle between menu and close icons
+  menuIcon.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
 });
 
-
-// selecting all a element on the page
-const links = document.querySelectorAll('a');
-
-// adding a click event on all elements 
-links.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    // if we click first thing is deleting the active class from all link
-    links.forEach((link) => {
-      link.classList.remove('active')
-    })
-    // then in the end add the active class only in the correct one
-    e.target.classList.add('active')
-  })
-});
 
 document.addEventListener('scroll', function() {
 
@@ -79,6 +70,8 @@ ScrollReveal({
  ScrollReveal().reveal('.home-title, .section-title, .experience-title1, .section-heading', { origin: 'top' });
  ScrollReveal().reveal('.img-title, .about-title,  .portfolio-title, .experience-title2, .testomonial-title, .contact-form', { origin: 'bottom' });
  ScrollReveal().reveal('.nickname, .about-img-title, .mitter', { origin: 'left' });
- ScrollReveal().reveal('.box-shadow-tilte,', { origin: 'right' });
+ ScrollReveal().reveal('.box-shadow-tilte, ', { origin: 'right' });
 
 //  ./ ScrollReveal
+
+
