@@ -57,41 +57,21 @@
                 <div>
                     <button class="text-white lg:hidden" id="btn">
                         <!-- Hamburger Icon -->
-                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <svg  onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!-- Close Icon (Hidden by default) -->
-                        <svg id="close-icon" class="size-8 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
                     </button>
                 </div>
             </div>
-            <nav id="menu" class="hidden">
-                <ul class="h-full">
-                    <li class="nav-list">
-                        <a href="#home" class="nav-link-desktop">Home</a>
-                    </li>
-                    <li class="nav-list w-full">
-                        <a href="#about" class="nav-link-phone w-full">About</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="#skills" class="nav-link-phone w-full">Skills</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="#experience" class="nav-link-phone w-full">Experience</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="#portfolio" class="nav-link-phone w-full">Portfolio</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="#testomonial" class="nav-link-phone w-full">Testomonial</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="#contact" class="nav-link-phone w-full">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="side-menu" class="fixed top-0 right-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
+            flex flex-col space-y-5 text-white duration-300">
+                <a href="javascript:void(0)" class="text-center text-4xl" onclick="closeMenu()">&times;</a>
+                <a class="hover:text-primary" href="#home">Home</a>
+                <a class="hover:text-primary" href="#about">About</a>
+                <a class="hover:text-primary" href="#skills">Skils</a>
+                <a class="hover:text-primary" href="#testomonial">Testomonial</a>
+                <a class="hover:text-primary" href="#contact">Contact</a>
+            </div>
         </header>
     </div>
   </section>
@@ -548,7 +528,7 @@
   <section class="bg-secondary section-gap" id="contact">
     <div class="container">
       <div class="flex justify-center items-end h-24 mb-16">
-      <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">contact</span></h1>
+      <h1 class="section-title">My <span class="text-primary text-5xl font-bold xl:text-6xl">Contact</span></h1>
     </div>
     <div class="flex justify-center">
       <!-- Contact Form -->
@@ -641,97 +621,6 @@
   <!-- ./footer -->
 
 
-
-  <section id="skills" class="bg-gray-100 py-16">
-  <div class="container mx-auto px-4">
-    <!-- Section Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-semibold text-gray-800">Skills & Expertise</h2>
-      <p class="text-gray-500 mt-2">A summary of my technical skills and areas of expertise</p>
-    </div>
-
-    <!-- Skills Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Front-End Development</h3>
-        <p class="text-gray-500 mb-4">Experienced in building responsive and interactive user interfaces using modern frameworks and libraries.</p>
-        <ul class="space-y-2">
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            HTML, CSS, JavaScript
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            React, Vue.js, Tailwind CSS
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            Responsive & Cross-Browser Design
-          </li>
-        </ul>
-      </div>
-
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Back-End Development</h3>
-        <p class="text-gray-500 mb-4">Proficient in building scalable and robust server-side applications with modern technologies.</p>
-        <ul class="space-y-2">
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            Node.js, Express
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            Python, Django
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            REST APIs, Microservices
-          </li>
-        </ul>
-      </div>
-
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Database Management</h3>
-        <p class="text-gray-500 mb-4">Extensive experience in designing and managing databases for scalable applications.</p>
-        <ul class="space-y-2">
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            MySQL, PostgreSQL
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            MongoDB, Firebase
-          </li>
-          <li class="flex items-center">
-            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11V7a1 1 0 00-2 0v4a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414l-1.707-1.707V7z" clip-rule="evenodd"></path>
-            </svg>
-            Database Design & Optimization
-          </li>
-        </ul>
-      </div>
-
-      <!-- Additional Skill Items -->
-      <!-- You can add more skills sections as necessary -->
 
     </div>
   </div>

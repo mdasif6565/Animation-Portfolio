@@ -1,17 +1,13 @@
-const btn = document.getElementById('btn');
-const menu = document.getElementById('menu');
-const menuIcon = document.getElementById('menu-icon');
-const closeIcon = document.getElementById('close-icon');
+var sideMenu = document.getElementById('side-menu');
+function openMenu() {
+    sideMenu.classList.remove('right-[-250px]');
+    sideMenu.classList.add('right-0');
+}
 
-btn.addEventListener('click', () => {
-  // Toggle the menu visibility
-  menu.classList.toggle('hidden');
-
-  // Toggle between menu and close icons
-  menuIcon.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
-
+function closeMenu() {
+    sideMenu.classList.remove('right-0');
+    sideMenu.classList.add('right-[-250px]');
+}
 
 document.addEventListener('scroll', function() {
 
